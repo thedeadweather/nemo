@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Отправляйся в точку Немо!</title>
-  <link rel="stylesheet" href="stylesheets/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="stylesheets/index.css">
+  
+  <script type="text/javascript" charset="UTF-8" src="https://code.jquery.com/jquery-3.5.0.min.js" 
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript" charset="UTF-8" src="scripts/app.js"></script> 
+  <script type="text/javascript" charset="utf-8" src="parallax.js-1.5.0/parallax.min.js"></script>
 </head>
 <body>
   
@@ -28,7 +34,7 @@
       </ul>
   </div>
   
-  <div class="intro" id="intro">
+  <div class="intro" id="intro" data-parallax="scroll" data-image-src="back.jpg">
     <h1>Путешествие к точке Немо</h1>
     <div class="description">
       Устали от повседневной суеты? Хотите побыть наедине с самим собой? Предлагаем отправить Вас в самую
@@ -42,8 +48,8 @@
   
   <div class="location">
   	<div class="how-to-get">
-  	  <h4 class="std-header">Где находится</h4>
-  	  <div class="text">
+  	  <h4 class="std-header clickable">Где находится</h4>
+  	  <div class="text hidden">
         Это так называемый океанский полюс недоступности, находится в южной части Тихого океана в координатах 48°52′ ю. ш. 123°23′ з. д.
         Ближайшая земля - необитаемый атолл Дюси, лежит в 2 688 км. Вычислил эту точку инженер-исследователь Хрвойе Лукатела
         в 1992 году при помощи компьютерного моделирования. Здесь почти нет представителей фауны.
@@ -53,8 +59,8 @@
   	  </div>
   	</div>
   	<div class="how-to-get">
-  	  <h4 class="std-header">Как добраться</h4>
-  	  <div class="text">
+  	  <h4 class="std-header clickable">Как добраться</h4>
+  	  <div class="text hidden">
         Сначала самолетом с парочкой пересадок мчим до острова Пасхи (Чили). Далее встречаемся с гидом и, под шум прибоя, идем 
         под парусом на лодке в течение 12-15 часов (в зависимости от скорости ветра) до места <span class="correct">выброса</span> высадки.
         Главное для нас - Ваша приватность, гид сразу же покинет Вас, оставив наедине с океаном. 
