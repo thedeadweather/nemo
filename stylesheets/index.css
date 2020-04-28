@@ -1,92 +1,90 @@
 body {
   margin: auto;
-  background-color: #ebf5fb;
+  background-color: white;
   font-family: 'Manrope', sans-serif;
 }
 
 /*-----------------------------HEADER------------------------------*/
+
 .header {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  height: 4em;
   top: 0; 
-  opacity: 0.9;
-  background: #d6eaf8;
-  display: table;
+  opacity: 0.8;
+  background: #212121;
+  height: 3em;
 }
 
 .header-nav {
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  overflow: auto;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .header-item {
-  float: left;
   list-style: none;
   text-align: center;
-  width: 20%;
-  line-height: 2em;
-  box-sizing: border-box;
-  border-bottom: groove #b3e5fc;
-  border-radius: 2em;
 }
 
 .header-link {
   display: block;	
   text-decoration: none;
   font-weight: bold;
-  color: #154360;
-  text-shadow: 2px 2px 5px white;
+  color: white;
 }
 
 .header-link:hover {
-  color: #1565c0;
+  color: #58d68d;
   transition: all ease .3s;
 }
 
 /*-----------------------------INTRO------------------------------*/
 
 .intro {
-  background-image: linear-gradient(rgba(0, 137, 123, 0.1), rgba(3, 169, 244, 0.2));
-  background-size: 100% 100%;
+  background-image: linear-gradient(rgba(88, 214, 41, 0.2), rgba(21, 21, 21, 0.5));
+  background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 4em;
+  margin-top: 3em;
   overflow: auto;	
 }
 
-h1 {
-  color:  white;	
-  margin: 4em 3em 2em 3em;  
+.main-header {
+  color: #FF3399;
+  margin: 3em 3em 2em;  
   text-align: center;
-  text-shadow: 2px 2px 5px darkblue;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 2px 2px #212121;
+  letter-spacing: 5px;
 }
 
 .description {
+  color: white;
   padding-top: 1em;
   text-align: center;
-  width: 70em;
+  width: 70%;
   margin: auto;
   font-weight: bold;
-  color: white;	
-  text-shadow: 2px 2px 5px darkblue;
+  font-size: 120%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 2px 2px black;
 }
 
 .order-button {
-  margin: 2em auto 2em auto;
+  margin: 2em auto 2em;
   width: 12em;
   order: solid;
   line-height: 3em;
   text-align: center;
-  background-color: #58d68d;
+  background-color: #f7f9f9;
   border-radius: 5px;
+  border: 2px solid #0b5345;
 }
 
 .order-button:hover {
-  background: #6a9a36;
+  border: 2px solid #f7f9f9;
+  background: #58d68d;
   transition: all ease .3s;
 }
 
@@ -97,20 +95,30 @@ h1 {
   font-weight: bold;
   color: #0b5345;
 }
+
+.link:hover {
+  color: #f7f9f9;
+  transition: all ease .3s;
+}
 /*-----------------------------LOCATION------------------------------*/
 
 .location {
   width: 80%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .clickable:hover {
   cursor: pointer;
+  border: solid #0b5345;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all ease .3s;
 }
 
 .how-to-get {
-  display: inline-block;
-  width: 49%;
+  width: 30em;
   margin: auto;
   overflow: auto;
   vertical-align: top;
@@ -119,7 +127,7 @@ h1 {
 .text {
   text-indent: 1em;
   padding: 2em;
-  color:  #17202a;
+  color:  #212121;
 }
 
 .picture {
@@ -132,15 +140,16 @@ h1 {
   width: 28em;
   margin: auto;
   border: solid #0b5345;
+  border-radius: 5px;
 }
 
 .std-header {
   text-align: center;
   text-decoration: underline;
   font-size: 140%;
-  margin-top: 3em;
-  color: #154360;
-  text-shadow: 2px 2px 5px white;
+  margin: 3em auto 1em;
+  color: #0b5345;
+  width: 50%;
 }
 
 span {
@@ -151,33 +160,39 @@ span {
 
 .option-1-of-3 {
   margin: 2em auto;
-  width: 32%;
+  width: auto;
   border: solid #0b5345;
   box-sizing: border-box;
   border-radius: 10px;
-  background-color: white;
+  background-color: #f7f9f9;
 }
 
 .options {
+  background: rgba(21, 21, 21, 0.8);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .option-1-of-3 .text {
 	text-align: center;
-	font-weight: bold; 
+	font-weight: bold;
+  font-size: 120%;
+  padding: 0;
+  color: #FF3399;
 } 
 
 .option-description {
 	text-align: center;
-	margin: auto;
+	margin: 0 10px;
 	padding: 0;
-    color:  #17202a;
+  color:  #212121;
+  list-style: none;
 }
 
 .sml-header {
   text-align: center;
-  padding-top: 2em;
+  padding-top: 1em;
   color: #0b5345;
   text-decoration: underline;
   font-size: 105% 
@@ -185,37 +200,52 @@ span {
 
 /*-----------------------------FEEDBACK------------------------------*/
 
-.photo img {
-  border-radius: 50%;
-  width: 16em;
-  height: 16em;
-  border: solid #0b5345;
-}
-
-.photo,
-.feed .text {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .feedback {
   width: 80%;
   margin: auto;
 }
 
-.feed .text {
-  width: 60%;
-  padding: 2em;
-  text-align: left;
-  text-indent: 0;
+.feeds {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feedback .std-header {
+  width: auto;
+  margin: 2em auto;
 }
 
 .feed {
-  margin: 2em;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  margin: 2em;
+  flex: 1;
+}
+
+.photo {
+  width: 10em;
+  height: 10em;
+  margin: auto;
+}
+
+.photo img {
+  border-radius: 50%;
+  border: solid #0b5345;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.feed .text {
+  width: 55%;
+  padding: 1em;
+  text-align: left;
+  text-indent: 0;
+  color: #212121;
 }
 
 .decor {
@@ -223,21 +253,30 @@ span {
   text-decoration: none;
 }
 
+.appear:hover {
+  opacity: 0.5;
+  transition: all ease .3s;
+  cursor: pointer;
+}
 /*-----------------------------FOOTER------------------------------*/
 
-.foot-block {
-  width: 30%;
-  flex: 1;
-  border-top: groove #b3e5fc;
-  border-radius: 2em;
-  height: 8em;
-}
-
 footer {
+  width: auto;
   margin-top: 3em;
   display: flex;
-  align-items: stretch;
-  background-image: linear-gradient(#ebf5fb, #d6eaf8, #2980b9);
+  flex-wrap: wrap;
+  background: #58d68d;
+}
+
+.foot-block {
+  flex: 1;
+  margin: 20px auto;
+}
+
+@media (max-width: 640px) {
+  .foot-block {
+    flex: auto;
+  }
 }
 
 .foot-block .text {
@@ -245,31 +284,34 @@ footer {
   margin: 0;
   padding: 0;
   text-align: center;
-
+  color: #212121;
 }
 
 .sml-header-foot {
-  color:  #17202a;
+  color:  #212121;
   text-align: center;
-  margin: 0;
-  padding: 1em;
+  margin: 0 0 10px;
   font-size: 105%;
 } 
-
-.logo {
-  display: inline-block;
-  width: 2.5em;
-  height: 2.5em;
-  margin: auto;
-}
 
 .logos {
   padding-top: 0.5em;
   display: flex;
   align-items: center;
-
+  justify-content: space-around;
 } 
+
+.logo {
+  width: 2.5em;
+  height: 2.5em;
+  margin: auto;
+}
 
 .logo:hover {
   cursor: pointer;
+}
+
+footer div a {
+  color: white;
+  text-decoration: none;
 }
