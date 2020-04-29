@@ -12,7 +12,12 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  max-width: 1200px;
   top: 0; 
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
   opacity: 0.8;
   background: #212121;
   height: 3em;
@@ -266,7 +271,8 @@ span {
 
 footer {
   width: auto;
-  margin-top: 3em;
+  max-width: 1200px;
+  margin: 3em auto auto;
   display: flex;
   flex-wrap: wrap;
   background: #58d68d;
@@ -285,7 +291,7 @@ footer {
 
 .foot-block .text {
   text-indent: 0;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   color: #212121;

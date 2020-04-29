@@ -7,11 +7,7 @@ var main = function(){
   });
 
   $('.appear').click(function(){
-    $(this).next().animate({
-        width: [ "toggle", "swing" ], // ширина элемента
-        height: [ "toggle", "swing" ], // высота элемента
-        opacity: "toggle" // прозрачность элемента
-    }, 1500, "linear"); // продолжительность и скорость анимации
+    $(this).next().slideToggle({duration: 800});
   });
 
   $('.header-link').click(function(){
